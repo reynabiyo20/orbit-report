@@ -4,7 +4,6 @@ export class Satellite {
     type: string;
     operational: boolean;
     launchDate: string;
-    // showWarning:boolean;
 
     constructor(name: string, type: string, launchDate: string, orbitType: string, operational: boolean) {
 
@@ -23,6 +22,16 @@ export class Satellite {
             return false;
         };
     };
+
+    getCount (x: string) {
+        let count: number = 0;
+        for (let i = 0; i < this.type.length; ++i) {
+          if (this.type[i] == x)
+            count++;
+        } return count;
+      };
+
+
 };
 
 

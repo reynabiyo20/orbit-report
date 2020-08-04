@@ -17,7 +17,7 @@ table {
 }
 
 .header-row {
-    background: #34495E;
+    background: #475e34;
     color: #fff
 }
 
@@ -28,9 +28,9 @@ th, td {
 }
 
 .odd  {
-    background-color: #2894f3;
+    background-color: #688056;
 } 
 
 .even {
-    background-color: #7aacec; 
+    background-color: #7d9243; 
 }
