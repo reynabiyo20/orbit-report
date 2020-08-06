@@ -15,23 +15,12 @@ export class Satellite {
 
     };
 
-    shouldShowWarning () {
-        if(this.type === "Space Debris") {
+    shouldShowWarning() {
+        if (this.type.toLocaleLowerCase() === "space debris") {
             return true;
         } else {
             return false;
         };
     };
-
-    getCount (x: string) {
-        let count: number = 0;
-        for (let i = 0; i < this.type.length; ++i) {
-          if (this.type[i] == x)
-            count++;
-        } return count;
-      };
-
-
+    
 };
-
-
